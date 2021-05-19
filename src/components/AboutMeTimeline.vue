@@ -33,23 +33,32 @@ export default {
     data: () => ({
       items: [
         {
-          color: 'red lighten-2',
-          icon: 'mdi-star',
+          color: 'indigo lighten-2',
+          icon: 'mdi-book-open-variant',
           opposite_text: '2013',
           title: 'Graduated from Secondary School',
           content: ''
         },
         {
-          color: 'purple darken-1',
-          icon: 'mdi-book-variant',
+          color: 'purple lighten-2',
+          icon: 'mdi-book-open-variant',
+          opposite_text: '2017',
+          title: 'Graduated from University',
+          content: ''
         },
         {
           color: 'green lighten-1',
-          icon: 'mdi-airballoon',
+          icon: 'mdi-tie',
+          opposite_text: '2017',
+          title: 'Work at mSolution',
+          content: ''
         },
         {
           color: 'indigo',
-          icon: 'mdi-buffer',
+          icon: 'mdi-tie',
+          opposite_text: '2019',
+          title: 'Work at HKET',
+          content: ''
         },
       ],
     }),
