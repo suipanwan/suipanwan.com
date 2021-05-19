@@ -29,7 +29,7 @@
                 tile
             >
                 <v-card-title class="blue-grey darken-3">
-                    <strong class="subheading">Get connected with us on social networks!</strong>
+                    <strong class="subheading">Get connected with me on social networks!</strong>
 
                     <v-spacer></v-spacer>
 
