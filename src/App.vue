@@ -29,7 +29,7 @@
                 tile
             >
                 <v-card-title class="blue-grey darken-3">
-                    <strong class="subheading">Get connected with me on social networks!</strong>
+                    <strong class="subheading">Get connected with me!</strong>
 
                     <v-spacer></v-spacer>
 
@@ -60,10 +60,10 @@ export default {
 
     data: () => ({
         icons: [
-            'mdi-facebook',
-            'mdi-twitter',
+            // 'mdi-facebook',
+            // 'mdi-twitter',
             'mdi-linkedin',
-            'mdi-instagram',
+            // 'mdi-instagram',
         ],
     }),
 };
