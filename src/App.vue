@@ -8,10 +8,10 @@
             <v-toolbar-title>SUIPANWAN</v-toolbar-title>
 
             <v-spacer></v-spacer>
-            <v-btn text href="#about">
+            <v-btn text @click="$vuetify.goTo('#about')">
                 <span class="mr-2">About</span>
             </v-btn>
-            <v-btn text href="#portfolio">
+            <v-btn text @click="$vuetify.goTo('#portfolio')">
                 <span class="mr-2">Portfolio</span>
             </v-btn>
         </v-app-bar>
@@ -34,14 +34,15 @@
                     <v-spacer></v-spacer>
 
                     <v-btn
-                    v-for="icon in icons"
-                    :key="icon"
-                    class="mx-4"
-                    dark
-                    icon
+                        v-for="contact in contacts"
+                        :key="contact.key"
+                        class="mx-4"
+                        dark
+                        icon
+                        :href="contact.url" target="_blank"
                     >
                     <v-icon size="24px">
-                        {{ icon }}
+                        {{ contact.icon }}
                     </v-icon>
                     </v-btn>
                 </v-card-title>
@@ -59,12 +60,10 @@ export default {
     name: 'App',
 
     data: () => ({
-        icons: [
-            // 'mdi-facebook',
-            // 'mdi-twitter',
-            'mdi-linkedin',
-            // 'mdi-instagram',
-        ],
+        contacts: {
+            linkedin: { icon:'mdi-linkedin' , url: 'http://www.linkedin.com/in/suipanwan'},
+            email: { icon:'mdi-email' , url: 'mailto:suipanwan@gmail.com'},
+        }
     }),
 };
 </script>
