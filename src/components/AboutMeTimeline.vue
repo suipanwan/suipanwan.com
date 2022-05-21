@@ -84,6 +84,15 @@ export default {
             title: 'Worked at U Lifestyle@HKET',
             content: ''
         },
+        {
+            color: '#FFF',
+            icon_img: require('@/assets/img/HKBU.png'),
+            url: 'https://www.hkbu.edu.hk/eng/main/index.jsp',
+            opposite_text: 'Current',
+            opposite_text_color: 'blue--text text--darken-1',
+            title: 'PG Student@HKBU',
+            content: 'MSc in Data Analytics and Artificial Intelligence'
+        },
       ],
     }),
 }
