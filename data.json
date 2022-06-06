@@ -1,0 +1,70 @@
+{
+  "name": "WAN Sui-Pan",
+  "landing": {
+    "greeding": "Hello World!",
+    "title": "I'm WAN Sui-Pan",
+    "subtitles": ["Software developer 🌐", "From Hong Kong 🇭🇰"],
+    "professionalDetails": [
+      {
+        "alt": "Linkedin",
+        "icon": "linkedin",
+        "link": "https://www.linkedin.com/in/suipanwan/"
+      },
+      {
+        "alt": "Github",
+        "icon": "github",
+        "link": "https://github.com/suipanwan"
+      },
+      {
+        "alt": "Email",
+        "icon": "gmail",
+        "link": "mailto:suipanwan@gmail.com"
+      }
+    ]
+  },
+  "skills": {
+    "Languages": ["JavaScript", "Python", "PHP"],
+    "Frontend": ["Vue.js", "Next.js"],
+    "Backend": ["Node.js", "CodeIgniter", "MySQL", "Oracle", "Docker"]
+  },
+  "projects": {
+    "baseURI": "",
+    "repositories": []
+  },
+  "experience": {
+    "Work Experience": [
+      {
+        "organization": "",
+        "role": "",
+        "type": "",
+        "startDate": "",
+        "endDate": "",
+        "city": "",
+        "state": "",
+        "country": "",
+        "url": "",
+        "thumbnail": ""
+      }
+    ]
+  },
+  "theme": {
+    "light": {
+      "palette": {
+        "type": "light",
+        "background": {
+          "paper": "#fff",
+          "default": "#fafafa"
+        }
+      }
+    },
+    "dark": {
+      "palette": {
+        "type": "dark",
+        "background": {
+          "paper": "#303030",
+          "default": "#212121"
+        }
+      }
+    }
+  }
+}
