@@ -41,7 +41,7 @@ Object.values(wrappedSkills).forEach((oarr) => {
 
 const useStyles = makeStyles((theme) => ({
   cont: {
-    minHeight: `calc(50vh - ${theme.spacing(4)}px)`,
+    minHeight: `calc(100vh - ${theme.spacing(4)}px)`,
   },
   skobj: {
     marginBottom: theme.spacing(4),
@@ -71,7 +71,7 @@ export default function Skills() {
           Skills
         </Typography>
         <div align="center">
-          <img alt="Skills" src="/skill.svg" width="500"/>
+          <img alt="Skills" src="/skill.svg" width="80%"/>
         </div>
       </Grid>
       <Grid container item xs={12} lg={6} direction="column" spacing={1} alignItems={align}>

@@ -55,7 +55,7 @@ export default function Landing() {
   return (
     <Grid container justifyContent="center" alignItems="center" className={classes.cont}>
       <Grid item xs={12} lg={6} align="center">
-        <img src="/memoji.png" alt="Landing" width="300" height="300" />
+        <img src="/memoji.png" alt="Landing" width="50%" />
       </Grid>
       <Grid item xs={12} lg={6} align="center">
         <Typography variant={mdDown ? "h4" : "h2"}>
