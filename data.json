@@ -3,7 +3,7 @@
   "landing": {
     "greeding": "Hello World!",
     "title": "I'm WAN Sui-Pan",
-    "subtitles": ["Software developer 🌐", "From Hong Kong 🇭🇰"],
+    "subtitles": ["Software developer 🌐", "From Hong Kong 🇭🇰", "Moved to Toronto 🇨🇦"],
     "professionalDetails": [
       {
         "alt": "Linkedin",
@@ -24,7 +24,7 @@
   },
   "skills": {
     "Languages": ["JavaScript", "Python", "PHP"],
-    "Frontend": ["Vue.js", "Next.js"],
+    "Frontend": ["Vue.js"],
     "Backend": ["Node.js", "CodeIgniter", "MySQL", "Oracle", "Docker"]
   },
   "projects": {

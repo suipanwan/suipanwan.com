@@ -11,8 +11,8 @@ const useStyles = makeStyles((theme) => ({
     width: `100%`,
     position: "relative",
     overflow: "hidden",
-    marginTop: "6em",
-    padding: "2em 0 ",
+    // marginTop: "6em",
+    // padding: "2em 0 ",
   },
   link: {
     fontSize: "1.25em",
@@ -24,7 +24,7 @@ const useStyles = makeStyles((theme) => ({
   copylight: {
     color: "inherit",
     fontSize: "1em",
-  },
+  }
 }));
 
 
@@ -37,13 +37,16 @@ export default function Footer() {
         <Grid
           item
           container
-          justifyContent="flex-start"
+          justifyContent="space-between"
           style={{
             textDecoration: "none",
           }}
         >
           <Typography className={classes.copylight}>
             &copy;suipanwan
+          </Typography>
+          <Typography className={classes.copylight}>
+            Modified from <a target="_blank" rel="noreferrer" href="https://github.com/kausko/Portfolio">kausko</a>
           </Typography>
         </Grid>
       </Container>
