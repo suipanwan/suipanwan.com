@@ -26,4 +26,5 @@ deploy-job:
   script:
     - ssh -o StrictHostKeyChecking=no -i $SSH_KEY root@159.89.117.185 "
       docker login -u $DOCKERHUB_AC -p $DOCKERHUB_PW &&
+      docker ps -aq | xargs docker stop | xargs docker rm &&
       docker run -d -p 80:3000 $IMAGE_NAME:$IMAGE_TAG"
