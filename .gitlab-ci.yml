@@ -4,6 +4,7 @@ variables:
 
 stages:          # List of stages for jobs, and their order of execution
   - build
+  - deploy
 
 build-job:       # This job runs in the build stage, which runs first.
   stage: build
@@ -17,3 +18,13 @@ build-job:       # This job runs in the build stage, which runs first.
   script:
     - docker build -t $IMAGE_NAME:$IMAGE_TAG .
     - docker push $IMAGE_NAME:$IMAGE_TAG
+
+deploy-job:
+  stage: deploy
+  before_script:
+    - chmod 400 $SSH_KEY
+  script:
+    - ssh -o StrictHostKeyChecking=no -i $SSH_KEY root@159.89.117.185 "
+      docker login -u $DOCKERHUB_AC -p $DOCKERHUB_PW &&
+      docker ps -aq | xargs docker stop | xargs docker rm &&
+      docker run -d -p 80:3000 $IMAGE_NAME:$IMAGE_TAG"
