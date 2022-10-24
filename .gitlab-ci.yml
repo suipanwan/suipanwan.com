@@ -10,7 +10,7 @@ npm-install:
   stage: build
   image: node:19-alpine
   script:
-    - npm ci
+    - npm ci --legacy-peer-deps
   artifacts:
     name: "artifacts"
     untracked: true
